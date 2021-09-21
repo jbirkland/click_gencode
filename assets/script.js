@@ -47,16 +47,16 @@ function askLowerCase(){
 
 function askUpperCase(){
   uppercaseAllowed5 = window.confirm("Would you like upper case letters in the password?"); 
-  confirmSelections()
+  // confirmSelections()
 }
-function confirmSelections(){
-  var selections = window.confirm("Character count:   " + numberOfCharacters1 + "  Special Characters:   " + specialCharacters2 + "  Numbers Requested:   " + numbersAllowed3 + "  Lowercase Letters:   " + lowercaseAllowed4 + "  Uppercase Letters:   " + uppercaseAllowed5)
-  if (selections === false) {
-    return askHowManyCharacters()
-  }
+// function confirmSelections(){
+//   var selections = window.confirm("Character count:   " + numberOfCharacters1 + "  Special Characters:   " + specialCharacters2 + "  Numbers Requested:   " + numbersAllowed3 + "  Lowercase Letters:   " + lowercaseAllowed4 + "  Uppercase Letters:   " + uppercaseAllowed5)
+//   if (selections === false) {
+//     return askHowManyCharacters()
+//   }
 
   
-}
+
 
 function generatePassword(){
   //askAllQuestions-- create this function up top to have all the question functions
@@ -74,10 +74,10 @@ function generatePassword(){
   if (lowercaseAllowed4 === true){
     possibleCharacters = possibleCharacters.concat(lowCaseAnswer)
   }
-  else if (specialCharacters2, numbersAllowed3, uppercaseAllowed5, lowercaseAllowed4 === false) {
-    alert ("You must chose at least one set of characters!");
-    return askHowManyCharacters();
-  }
+  // else if (specialCharacters2, numbersAllowed3, uppercaseAllowed5, lowercaseAllowed4 === false) {
+  //   alert ("You must chose at least one set of characters!");
+  //   return askHowManyCharacters();
+  // }
   console.log (possibleCharacters)
   
 for (var index = 0; index <  numberOfCharacters1; index++) {
